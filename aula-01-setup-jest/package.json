@@ -1,0 +1,21 @@
+{
+  "name": "aula-01-setup-jest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "set NODE_OPTIONS=--experimental-vm-modules && npx jest --runInBand test/",
+    "test:debug": "node --experimental-vm-modules --inspect-brk node_modules/jest/bin/jest.js",
+    "test:dev": "set NODE_OPTIONS=--experimental-vm-modules && npx jest --runInBand test/ --watch-all"
+  },
+  "keywords": [],
+  "author": "danpeixoto",
+  "license": "ISC",
+  "engines": {
+    "node": ">=19.8.1"
+  },
+  "type": "module",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
